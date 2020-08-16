@@ -8,4 +8,14 @@
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
   %body
+    .Header
+      = link_to root_path, class: "headerlogo" do
+        ReClothes
+      .Header__info
+        .Header__info__new
+          新規登録
+        .Header__info__in
+          ログイン
+        .Header__innfo__out
+          ログアウト
     = yield
