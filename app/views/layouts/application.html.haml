@@ -8,14 +8,16 @@
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
   %body
+    = render 'layouts/notifications'
     .Header
       = link_to root_path, class: "headerlogo" do
         ReClothes
-      .Header__info
-        .Header__info__new
-          新規登録
-        .Header__info__in
-          ログイン
-        .Header__innfo__out
-          ログアウト
+      - if user_signed_in?
+        .XXXX
+          = link_to "ログアウト", destroy_user_session_path, method: :delete
+          = link_to  "投稿する", "/posts/new", class: "YYYY"
+      - else
+        .ZZZZ
+          = link_to "ログイン", new_user_session_path, class: 'YYYY'
+          = link_to "新規登録", new_user_registration_path, class: 'YYYY'
     = yield
