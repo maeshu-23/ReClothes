@@ -1,0 +1,38 @@
+@import "reset";
+@import "modules/messages";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "modules/flash";
+
+
+
+
+// body {
+//   width: 100vw;
+//   height: 58px;
+//   background-color: red;
+.Header{
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  height: 58px;
+  width: 100vw;
+  background-color: sienna;
+  .headerlogo{
+    padding: 10px;
+    text-decoration: none;
+    color: seashell;
+  }
+  &__info{
+    display: flex;
+    font-size: 16px;
+    padding: 22px 10px 0 0;
+    &__new{
+      padding-right: 8px;
+    }
+    &__in{
+      padding-right: 8px;
+    }
+  }
+}
+
