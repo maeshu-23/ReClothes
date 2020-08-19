@@ -3,6 +3,7 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "modules/flash";
+@import "modules/user";
 
 
 
@@ -17,22 +18,27 @@
   justify-content: space-between;
   height: 58px;
   width: 100vw;
-  background-color: sienna;
+  background-color: yellowgreen;
   .headerlogo{
     padding: 10px;
     text-decoration: none;
     color: seashell;
   }
-  &__info{
-    display: flex;
+  &__in{
     font-size: 16px;
-    padding: 22px 10px 0 0;
-    &__new{
-      padding-right: 8px;
+    padding: 20px;
+    .headersign {
+      text-decoration: none;
     }
-    &__in{
-      padding-right: 8px;
+  }
+  &__out{
+    font-size: 16px;
+    padding: 20px;
+    .headersign {
+      text-decoration: none;
     }
   }
 }
+  
+
 
