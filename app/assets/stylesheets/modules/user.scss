@@ -1,17 +1,22 @@
 .newpage {
-  width: 980px;
-  margin: 60px auto;
-  padding: 60px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
+  // width: 980px;
+  // margin: 60px auto;
+  // padding: 60px;
+  // background-color: #fff;
+  // border: 1px solid #ddd;
+  // border-radius: 5px;
+  // display: flex;
+  // justify-content: space-between;
 }
 .newpage__title {
-  width: 50%;
-  font-size: 14px;
+  // width: 50%;
+  font-size: 27px;
   font-weight: 200;
+  padding: 20px 35px;
+  background-color: rgb(60, 87, 209);
+  height: 80px;
+  letter-spacing: 0.05em;
+  color: whitesmoke;
 }
 
 //   h2 {
@@ -35,22 +40,27 @@
 // }
 
 .newpage__form {
-  width: 50%;
+  width: 450px;
+  margin: 0 auto;
+  padding-top: 16px;
 }
 
 .formfield {
-  margin-bottom: 10px;
+  margin-bottom: 10px;;
   &__label--normal {
     padding: 10px 0;
     letter-spacing: 1px;
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 800;
     i {
       font-size: 11px;
     }
+    em {
+      font-weight: 800;
+    }
     .field_with_errors {
       display: inline-block;
-      color: #d65f4c;
+      color: orangered;
       font-weight: 400;
     }
   }
@@ -60,6 +70,9 @@
       width: 100%;
       padding: 10px;
       letter-spacing: 1px;
+      border-radius: 10px;
+      outline: none;
+      
     }
     .field_with_errors {
       position: relative;
@@ -81,6 +94,8 @@
 .Button {
   display: inline-block;
   height: 50px;
+  width: 450px;
+  margin-top: 30px;
   padding: 0 30px;
   line-height: 50px;
   letter-spacing: 1px;
@@ -93,30 +108,31 @@
 .UserButton {
   margin-top: 20px;
   color: #fff;
-  background-color: #38aef0;
+  background-color: orange;
 }
 
-// #error_explanation {
-//   margin: 20px 0;
-//   padding: 20px 30px;
-//   border: 1px solid #ddd;
-//   border-radius: 2px;
+#error_explanation {
+  margin: 7px 0;
+  padding: 20px 30px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
 
-//   h2 {
-//     margin-bottom: 10px;
-//     color: #d65f4c;
-//     font-size: 14px;
-//   }
+  h2 {
+    margin-bottom: 5px;
+    color: red;
+    font-size: 13px;
+    font-weight: 800;
+  }
 
-//   ul {
-//     margin: 0;
-//     padding-left: 17px;
-//     list-style: square;
-//   }
+  ul {
+    margin: 0;
+    padding-left: 17px;
+    list-style: square;
+  }
 
-//   li {
-//     margin: 0;
-//     padding: 0;
-//     font-size: 13px;
-//   }
-// }
+  li {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+}
